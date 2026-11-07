@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альбомы и их авторы</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Альбомы и их авторы</h1>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="search-input">Поиск альбома:</label>
+                <input type="text" id="search-input" placeholder="Введите название...">
+            </div>
+
+            <div class="control-group">
+                <label for="album-select">Выберите альбом:</label>
+                <select id="album-select">
+                    <option value="">Загрузка...</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="loading" class="hidden">Загрузка данных...</div>
+        <div id="error" class="hidden"></div>
+
+        <div id="album-details" class="hidden">
+            <div id="author-info" class="author-card"></div>
+            
+            <h2>Фотографии альбома</h2>
+            <div id="photos-container" class="photos-grid"></div>
+        </div>
+    </div>
+</body>
+</html>
